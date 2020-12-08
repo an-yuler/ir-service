@@ -7,10 +7,8 @@ import com.ir.entity.NewsProperties;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.converters.basic.DateConverter;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -18,7 +16,7 @@ import java.util.Map;
 /**
  * @author yuler
  */
-public class XMLNewsMapper implements NewsMapper {
+public class XmlNewsMapper implements NewsMapper {
 
     private static NewsProperties pros = new PropertiesFactory().getProps();
 

@@ -1,6 +1,6 @@
 package com.ir.service;
 
-import com.ir.dao.XMLNewsMapper;
+import com.ir.dao.XmlNewsMapper;
 import com.ir.entity.News;
 
 import java.io.IOException;
