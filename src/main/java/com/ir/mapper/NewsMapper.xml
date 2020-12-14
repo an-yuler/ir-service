@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ir.mapper.NewsMapper">
+    <resultMap id="NewsBeanMap" type="NewsBean">
+        <id property="id" column="id"/>
+        <result property="articleAbstract" column="abstract"/>
+        <result property="articleSource" column="article_source"/>
+        <result property="articleSourceUrl" column="article_source_url"/>
+        <result property="date" column="datetime"/>
+    </resultMap>
+    <select id="getNewsBeanById" resultMap="NewsBeanMap">
+        select *
+        from allnews
+        where id = #{id}
+    </select>
+
+    <select id="getAllNewsBean" resultMap="NewsBeanMap">
+        select *
+        from allnews;
+    </select>
+</mapper>
